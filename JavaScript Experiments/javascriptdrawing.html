@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title id = "title">Experimenting with JS (Just messing around)</title>
+</head>
+<body>
+  <p>Ignore this, this is just where I'm going to try doing JS stuff. I'm learning JS currently from a book called "Eloquent Javascript second edition", and I'm trying things here.</p>
+	<h1 id = "header">Random Username Generator</h1>
+	<p>How old are you?</p>
+	<input type = "text" id = "inp" placeholder="Input value here"/>
+	<button onclick = "pressed()" id="button1">Click Me</button>
+  <br>
+	<script>
+  function randomNumber(min, max) {
+    return Math.random(min, max);
+  }
+  function pressed() {
+    var y = randomNumber(10,20);
+    console.log(y + 1);
+  }
+    
+	</script>
+</body>
+</html>

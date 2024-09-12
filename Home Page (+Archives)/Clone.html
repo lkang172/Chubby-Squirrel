@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chubby's Webpage</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="shortcut icon" href="https://media.mnn.com/assets/images/2014/12/gray-squirrel-uc-berkeley.jpg.653x0_q80_crop-smart.jpg" type="image/png" sizes="256x256">
+    <!--Scrollbar code-->
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d5dbe8; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
+</head>     
+<!--End Scrollbar Code-->
+<center>
+
+<!--This is the navbar code-->
+<br>
+<style>
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: auto;
+  background-color: #f1f1f1;
+}
+</style>
+<style>
+body {
+  margin: 0;
+font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  background-color:  #2a2b2d;
+  padding: 30px;
+  width: 700px;
+  text-align: center;
+
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #2a2b2d
+;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+#navbar a:hover {
+  background-color: #d5dbe8;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: black;
+  color: #d5dbe8;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="navbar"><div id="sticky">
+<p><font size="6"><font color="White">≧◉◡◉≦ CHUBBY'S WEBSITE ≧◉◡◉≦</p></font>
+<center>
+<a href="https://chubbysquirrel.neocities.org/" target="_blank">
+  <a class="active" href="https://chubbysquirrel.neocities.org">Home</a>
+  <a href="https://chubbysquirrel.neocities.org/Drawing.html">News</a>
+  <a href="https://chubbysquirrel.neocities.org/About.html">About</a>
+  <a href="https://chubbysquirrel.neocities.org/CubbysAquapage.html"><font color="0061FF">| Aquapage</font></a>
+  <a href="https://chubbysquirrel.neocities.org/Gamepage.html"><font color="0061FF">Gamepage</font></a>
+  <a href="https://chubbysquirrel.neocities.org/Travelpage.html"><font color="0061FF">Travelpage</font></a>
+  <a href="https://chubbysquirrel.neocities.org/Stats.html"><font color="0061FF">Picturepage |</font></a>
+    <a href="https://chubbysquirrel.neocities.org/TempConverter.html">JS Projects</a>
+
+    <a href="https://chubbysquirrel.neocities.org/AdditionalArticles.html">Other Website's Cool Stuff</a>
+</div></div>
+</font>
+<br>
+<div class="content">
+<!--End of the navbar code-->
+   <head>
+   <center>
+<style>
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+ .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+   .next,.text {font-size: 11px}
+}
+</style>
+<center>
+  <style>  
+   body {
+ 
+  background-color: #d5dbe8;
+  color: black;
+font-family: 'Raleway', sans-serif;
+  background-repeat: no-repeat;
+  background-size:cover;   
+</style>
+<style>
+div.a {
+  width: 800px;
+}
+</style>
+</head>
+<body>
+
+</script>
+ <center>
+ <div class="a">
+ <style>
+nav {
+  float: left;
+  width: 20%;
+  background: #ccc;
+  padding: 20px;
+}
+</style>
+<section>
+  <nav>
+  <p><strong>Articles:</strong></p>
+   <a href="https://chubbysquirrel.neocities.org/NEMO.html"><font color="black">Clownfish (A.K.A Nemo) Requirements</font></a>
+   <br>
+   </br>
+   <a href="https://chubbysquirrel.neocities.org/BettaFriends.html"><font color="black">Betta Friends</font></a>
+  </nav>
+</section>
+
+ <article>
+ <center>
+<h1>What's New 4 Chubby Squirrel:</h1>
+<p>Source: The Squirrel News<br></br>Confirmed: Chubby's trip to Death Valley National Park and Zion National Park this March!<br><br>Chubby Squirrel will "take a lot of pictures...for the website", and will not update when he's "...in Vegas". "I will have lot's of fun," states Squirrel in a press conference.</p></article>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+
+</div>
+<br>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<div class="slideshow-container">
+
+<div class="mySlides fade"><br>
+
+  <img src="http://travelingmel.com/WordPress/wp-content/uploads/2016/06/IMG_9717.jpg" style="width:100%"    height="600">
+
+  <div class="text">Joshua Tree National Park</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://res.klook.com/image/upload/fl_lossy.progressive/q_auto/f_auto/c_fill/blogen/shutterstock_240894736.jpg" style="width:100%"  height="600">
+  <div class="text">Kenting National Park</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://travel.usnews.com/static-travel/images/destinations/94/gettyimages-533201450_1.jpg" style="width:100%"    height="600">
+  <div class="text">Yosemite National Park</div>
+</div>
+
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><h2>Some Good Reads</h2>
+<p><mark>If you have a Betta Fish...</mark></p><a href="https://chubbysquirrel.neocities.org/BettaFriends.html"  target="_blank"><font color="black">Read more--></font></a>
+<p>The photo below is part of Kenting National Park...</p><a href="https://chubbysquirrel.neocities.org/Places_To_Go.html/Kenting.html"  target="_blank"><font color="black">Read more--></font></a>
+<marquee direction="left">To learn more about those wonderful places above, please click on "Travelpage" on the top of the screen.</marquee>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</center>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2a2b2d;
+   color: white;
+   text-align: center;
+}
+</style>
+<div class="footer">
+<p>Contact us via Neocities<br>
+Made by Chubby Squirrel<br>
+2018-FOREVER</p>
+</div>
+     </body>
+</html>

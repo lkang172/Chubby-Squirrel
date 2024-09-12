@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chubby's Webpage</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="indexstyle.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/f5d31853a6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Source+Code+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://chubbysquirrel.neocities.org/Untitled-1.png" type="image/png" sizes="256x256">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Chubby's Webpage">
+    <meta property="og:url" content="https://chubbysquirrel.neocities.org/">
+    <meta property="og:image" content="https://chubbysquirrel.neocities.org/Untitled-1.png">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Welcome to Chubby's Webpage! This is a website with many intriguing articles by Chubby Squirrel about travel, fishkeeping, and more!">
+    <meta name="keywords" content="Travel,Outdoors,Nature,Hiking,Parks,Photography,Squirrel,Chubby Squirrel">
+    <meta name="description" content="Welcome to Chubby Squirrel's webpage, a travel/outdoors nature blog. Come read about a variety of topics, from national parks to kayaking!">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="maxwidth">
+          <img class="logo" src="https://chubbysquirrel.neocities.org/Chubby%20Squirrel%20Logo%20Blue%20Oval%20Without%20Margin.png" width="100px">
+          <div class="category"><a href="https://chubbysquirrel.neocities.org/">Home</a></div>
+          <div class="category"><a href="https://chubbysquirrel.neocities.org/about.html">About</a></div>
+          <div class="category"><a href="https://chubbysquirrel.neocities.org/articles.html">Articles</a></div>
+          <div class="category"><a href="https://chubbysquirrel.neocities.org/gallery.html">Gallery</a></div>
+        </div>
+      </nav>
+      <div id="nav2">
+        <img src="https://chubbysquirrel.neocities.org/Chubby%20Squirrel%20Logo%20Blue%20Oval%20Without%20Margin.png" width="100px">
+        <i class="fas fa-solid fa-bars" id="menu" on="false"></i>
+      </div>
+    </header>
+    <div id="hiddennav">
+      <div><a href="https://chubbysquirrel.neocities.org/">Home</a></div>
+      <div><a href="https://chubbysquirrel.neocities.org/about.html">About</a></div>
+      <div><a href="https://chubbysquirrel.neocities.org/articles.html">Articles</a></div>
+      <div><a href="https://chubbysquirrel.neocities.org/gallery.html">Gallery</a></div>
+    </div>
+    <script>
+      document.getElementById('menu').onclick = function() {
+        var navigation = document.getElementById('hiddennav');
+        if(navigation.style.display == "" || navigation.style.display == "none")
+          navigation.style.display = "block";
+        else
+          navigation.style.display = "none";
+      };
+    </script>
+    <script>window.onscroll = function() {scrollFunction()};</script>
+    <center>
+      <div class="container1">
+        <div class="maxwidth">
+          <h1 class="newestarticles" style="text-align: left;">Newest Articles</h1>
+            <div class="lcol">
+              <img src="https://chubbysquirrel.neocities.org/Photos/National%20Parks/IMG_2543.jpg" width="100%">
+              <div class="text">
+                <a href="https://chubbysquirrel.neocities.org/places/yangmingshan">Yangmingshan National Park (Taiwan!)</a>
+                <p style="color: #ffc400;"><i>06/28/2023 | Photos and article by Chubby Squirrel</i></p>
+                <div class="preview">
+                  <br>
+                  <p>&emsp;After four long years of COVID travel restrictions, I was finally able to visit Taiwan again this summer! My parents and I stayed for three weeks, and got to see aunts, uncles, grandparents, and old friends. I was especially excited to see my cousins, who came at the same time as us from California, whom I haven’t seen since 2018. Flying from our house on the US east coast to Los Angeles took five hours, and then we had to wait in the airport for eight more hours before boarding a 12-hour flight to Taiwan. Needless to say, the journey was unenjoyable. However, as I stepped foot out of the Taoyuan International Airport, the distinctive, humid air recalled fond memories of trips in years past.</p>
+                  <br>
+                  <center><button id="more" onclick="window.location.href='https://chubbysquirrel.neocities.org/places/yangmingshan';">Read more</button></center>
+                </div>
+              </div>
+            </div>
+            
+            <div class="rcol">
+              <img src="https://chubbysquirrel.neocities.org/Photos/IMG-0369.jpg" width="100%">
+              <div class="text">
+                <a href="https://chubbysquirrel.neocities.org/skiing">(Never) Skiing Again</a>
+                <div class="preview">
+                  <p style="color: #ffc400;"><i>04/07/2023 | Photos and article by Chubby Squirrel</i></p>
+                  <br>
+                  <p>&emsp;To preface, I've only gone skiing once before, when I was five years old. We went with some friends, because nobody in my family is of the winter sports type - we despise the cold - and all I can recall is that I was forced to attend a ski class, during which I fell once and couldn’t get up, and ended up being left behind. Not a pleasant experience, to be sure. But despite the fact that I vowed never to go skiing again after the tragic incident, there I was, careening down the slopes, more than a decade later, mouth gaping open but emitting no sound in utter terror as I “pizza’d” in vain, knowing that breaking that vow I made to myself all those years ago had been a (hopefully not fatal) mistake...</p>
+                  <br>
+                  <center><button id="more" onclick="window.location.href='https://chubbysquirrel.neocities.org/skiing';">Read more</button></center>
+                </div>
+              </div>
+            </div>
+            
+            <div class="rcol">
+              <img src="https://chubbysquirrel.neocities.org/Photos/National%20Parks/IMG-6556.jpg" width="100%">
+              <div class="text">
+                <a href="https://chubbysquirrel.neocities.org/places/everglades.html">Everglades National Park</a>
+                <div class="preview">
+                  <p style="color: #ffc400;"><i>07/28/2022 | Pictures and Article by Chubby Squirrel</i></p>
+                  <br>
+                  <p>&emsp;Everglades National Park is the third largest national park in the lower 48 states, infested with all manner of voracious man-eating beasts. Just kidding about the latter part; the alligators and crocodiles are actually all very docile and well-behaved, preferring to sit in the middle of a well-travelled trail waiting for food to come lumbering by instead of spending energy on chasing down dinner. For whatever reason, I allowed myself to be taken along on a three-day excursion to this swampy excuse for a national park. What's even more surprising than me going? I actually ended up liking it despite myself...</p>
+                  <br>
+                  <center><button id="more" onclick="window.location.href='https://chubbysquirrel.neocities.org/places/everglades.html';">Read more</button></center>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="maxwidth">
+        <h3 style="float: left"><a href="https://chubbysquirrel.neocities.org/places/zion.html" id="weeklyphoto">Photo of the week: Zion National Park, Utah</a></h3>
+        <div class="container2">
+           <img src="https://chubbysquirrel.neocities.org/Photos/National%20Parks/IMG-6815.jpg" width="100%">
+        </div>
+      </div>
+      <div class="maxwidth">
+        <div class="lcol2">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/campingtrip.html"><h2 style="line-height:0.8"><tt>Cape Henlopen Pt. 2</tt></h2></a>
+            <p><font color="#ffc400">Locations</font></p>
+            <p><i>6/23/2021</i></p>
+          </div>
+          <img src="https://chubbysquirrel.neocities.org/Photos/henlopen%20scenery.jpg">
+          <p>You might have read the article on my camping trip last year to Cape Henlopen State Park in Delaware...<br><a href="https://chubbysquirrel.neocities.org/campingtrip.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+        </div>
+        <div class="rcol2">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/fossils.html"><h2><tt>Fossils</tt></h2></a>
+            <p><font color="#6c914d">Nature</font></p>
+            <p><i>2/11/2021</i></p>
+          </div>
+          <img src="https://chubbysquirrel.neocities.org/Photos/fossils%20for%20website.jpg">
+          <p>It's very likely that you have heard of the dinosaurs that once roamed our very own planet...<br><a href="https://chubbysquirrel.neocities.org/fossils.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+        </div>
+        <!--Separation-->
+        <div class="lcol2">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/DeathValley.html"><h2 style="line-height:0.8"><tt>Death Valley</tt></h2></a>
+            <p><font color="#ffc400">Locations</font></p>
+            <p><i>3/20/2018</i></p>
+          </div>
+          <img src="https://chubbysquirrel.neocities.org/IMG_3053.JPG">
+          <p>This March (2019) we took a week off and went to Death Valley National Park. We...<br><a href="https://chubbysquirrel.neocities.org/DeathValley.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+        </div>
+        <div class="rcol2">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/places/Joshua_Tree.html"><h2 style="line-height:0.8"><tt>Joshua Tree</tt></h2></a>
+            <p><font color="#ffc400">Locations</font></p>
+            <p><i>6/20/2018</i></p>
+          </div>
+          <img src="https://chubbysquirrel.neocities.org/Photos/joshuatreeforwebsite.jpg">
+          <p>My family and I went to Joshua Tree National Park in California in June...<br><a href="https://chubbysquirrel.neocities.org/places/Joshua_Tree.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+        </div>
+
+        <!--below is for media query-->
+      <div class="query">
+        <h1>Newest Articles</h1>
+        <div class="box">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/places/everglades.html"><h2>Everglades National Park</h2></a>
+            <p><i>07/28/2022</i> | <font color="#ffc400">Locations</font></p>
+            <p>Everglades National Park is the third largest national park in the lower 48 states, infested with all manner of voracious man-eating beasts. Just kidding about the latter part; the alligators and crocodiles are actually all very docile...<br><a href="https://chubbysquirrel.neocities.org/places/everglades.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+          </div>
+          <img class ="img" src="https://chubbysquirrel.neocities.org/Photos/IMG_7719.jpg">
+        </div>
+        
+        <div class="box">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/places/new-river-gorge.html"><h2>New River Gorge National Park</h2></a>
+            <p><i>07/25/2022</i> | <font color="#ffc400">Locations</font></p>
+            <p>Established as a national river in 1978 and redesignated as a national park in 2020, New River Gorge is the latest of many geographical treasures to acquire this famed status. Spanning over 50 miles, the young national park in West Virginia preserves...<br><a href="https://chubbysquirrel.neocities.org/places/new-river-gorge.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+          </div>
+          <img class ="img" src="https://chubbysquirrel.neocities.org/Photos/National%20Parks/IMG-6556.jpg">
+        </div>
+        
+        <div class="box">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/inflatable-kayak.html"><h2>Experiences with an Inflatable Kayak</h2></a>
+            <p><i>06/14/2022</i> | <font color="#ed1c1c">Hobbies</font></p>
+            <p>Recently, I was asked by a friend to join his Dragon Boat team because they didn't have enough paddlers. I was ecstatic, mainly because I had never done anything of the sort before, and figured that paddling wouldn't be exceedingly difficult...<br><a href="https://chubbysquirrel.neocities.org/inflatable-kayak.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+          </div>
+          <img class ="img" src="https://chubbysquirrel.neocities.org/Photos/IMG_7719.jpg">
+        </div>
+        
+        <div class="box">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/places/greatfalls.html"><h2>Great Falls National Park</h2></a>
+            <p><i>11/3/2021</i> | <font color="#ffc400">Locations</font></p>
+            <p>Imagine a roaring river, flowing madly by for as long as time itself. Forests and rocky formations, weathered by the constant onslaught of formidable power, line both sides of it. A few stubborn boulders stand in the way of the gushing current...<br><a href="https://chubbysquirrel.neocities.org/places/greatfalls.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+          </div>
+          <img class ="img" src="https://chubbysquirrel.neocities.org/Photos/IMG_4570.jpg">
+        </div>
+        
+        <div class="box">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/campingtrip.html"><h2>Cape Henlopen State Park (2)</h2></a>
+            <p><i>6/23/2021</i> | <font color="#ffc400">Locations</font></p>
+            <p>You might have read the article on my camping trip last year to Cape Henlopen State Park in Delaware. Well, I liked it so much that I went again this year, except this time with the company of my family and my friend's family. We booked...<br><a href="https://chubbysquirrel.neocities.org/campingtrip.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+          </div>
+          <img class ="img" src="https://chubbysquirrel.neocities.org/Photos/henlopen%20scenery.jpg">
+        </div>
+        
+        <div class="box">
+          <div class="title">
+            <a href="https://chubbysquirrel.neocities.org/cicadas.html"><h2>Brood X Cicadas</h2></a>
+            <p><i>5/23/2021</i> | <font color="#6c914d">Nature</font></p>
+            <p>I don't know if you've heard of, or, should I say, heard brood X cicadas so far this year. I had no considerable knowledge of them at all until they literally arrived at my doorstep! Brood X (the Roman numeral for 10) is a generation of cicadas that only emerge once every 17 years...<br><a href="https://chubbysquirrel.neocities.org/cicadas.html"><font color="#ff333a">Continue Reading<i class="fas fa-angle-double-right"></i></font></a></p>
+          </div>
+          <img class ="img" src="https://chubbysquirrel.neocities.org/Photos/cicadaforwebsite.jpg">
+        </div> 
+        <hr>
+      </div>
+        <br>
+        <h1 class="FAQ" style="text-align: center;">FAQ</h1>
+          <div class="lthird">
+            <img class="thirdsimg" src="https://chubbysquirrel.neocities.org/Photos/IMG-6787.jpg" width="100%">
+            <div class="text2">
+              <h2>What is "Chubby Squirrel"?</h2>
+              <hr><br>
+              <p>This is a question that I get asked a lot. After all, it is a unique site name/alias. Well, it all started a very long time ago, when I saw a (you guessed it) "chubby" squirrel at the park, minding his own business. He ended up becoming the namesake for the website.</p>
+              <br>
+              <p>Wanna learn more about me or the website?</p>
+              <br>
+              <center><button id="more" onclick="window.location.href='https://chubbysquirrel.neocities.org/about.html';">About Me</button></center>
+            </div>
+          </div>
+          <div class="mthird">
+            <img class="thirdsimg" src="https://chubbysquirrel.neocities.org/Images/jtnp.JPG" width="100%">
+            <div class="text2">
+              <h2>What's up with the Gallery?</h2>
+                <hr><br>
+                <p>It is what I call a "work in progress", A.K.A. an abrupt idea that I had once and wish to pursue but procrastinate too much to actually pursue. On a (more) serious note, the Gallery was supposed to be a place for me to display pictures I'm proud of. I may add to it...someday.</p>
+                <br>
+                <p>In the meantime, you can look at the pictures I took in the articles!</p>
+                <br>
+                <center><button id="more" onclick="window.location.href='https://chubbysquirrel.neocities.org/articles.html';">Articles</button></center>
+            </div>
+          </div>
+          <div class="rthird">
+            <img class="thirdsimg" src="https://chubbysquirrel.neocities.org/Photos/articlespicture.JPG" width="100%">
+            <div class="text2">
+              <h2>Is there a way to contact you?</h2>
+                <hr><br>
+                <p>No. Leave me alone (kidding!). You can contact me on neocities.org, if you have an account. I will respond to messages sent there. Besides that, no. I value my privacy and as such will not post contact information on my website.</p>
+                <br>
+                <p>If you wish to contact me regarding usage of my photos (now I REALLY am flattering myself), please look elsewhere instead of using mine. There are many, MANY individuals more talented than myself (who has no talent in photography whatsoever) who offer their pictures for public usage. Thanks!</p>
+            </div>
+          </div>
+        
+      </div>
+      
+      <div class="footer">
+        <center>
+          <div class="maxwidth">
+            <p><u>Navigation & Info</u></p>
+            <br>
+          <div class="fleft">
+            <p>Central Nav.</p>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/">Home</a>
+            <br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/about.html">About</a>
+            <br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/articles.html">Articles</a>
+            <br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/gallery.html">Gallery</a>
+            <br>
+          </div>
+          <div class="fleft">
+            <p>Archived</p>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/aquapage.html">Aquapage - Archived</a>
+            <br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/Picturepage.html">Picturepage - Archived</a><br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/Gamepage.html">Gamepage - Archived</a><br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/Travelpage.html">Travelpage - Archived</a><br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/CoolSites.html">Recommended Sites - Archived</a><br>
+          </div>
+          <div class="fleft">
+            <p>Reading</p>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/articles.html">Articles</a><br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/HooverDam.html">>&emsp; Hoover Dam (old)</a><br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/BeginnerFish.html">>&emsp; Betta Fish (old)</a><br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/places/Joshua_Tree.html">>&emsp; Joshua Tree (old)</a><br>
+            <a style="color: #bad5ff" href="https://chubbysquirrel.neocities.org/places/capehenlopen.html">>&emsp; Cape Henlopen (old)</a><br>
+          </div>
+          <div class="fright">
+            <img src="https://chubbysquirrel.neocities.org/Chubby%20Squirrel%20Logo%20Blue%20Oval%20Without%20Margin.png" width="60%">
+          </div>
+        </div>
+        <div class="fbottom">
+          <p>Website & content Ⓒ Chubby Squirrel 2022</p>
+          <p><a href="#top"><font color="white">Back to top</font></a></p>
+        </div>
+      </div>
+    </center>
+  </body>
+</html>

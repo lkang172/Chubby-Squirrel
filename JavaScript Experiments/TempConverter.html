@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://chubbysquirrel.neocities.org/Untitled-1.png" type="image/png" sizes="256x256">
+    <link href="https://fonts.googleapis.com/css2?family=Literata&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+    <title>JS Games by Chubby Squirrel</title>
+    </head>
+    <center>
+    <button class="otherbuttons" onclick="location.href='https://chubbysquirrel.neocities.org/'">Return to Home</button>
+      <h1>Rock Paper Scissors Game vs Computer</h1>
+      <p>Simple JS Game: Rock Paper Scissors against a computer!</p>
+      <img src="https://chubbysquirrel.neocities.org/Webp.net-gifmaker%20(7).gif" width="100px">
+      <!--<label for="userChoice">Enter your choice here: </label>-->
+      <input type="text" id="userChoice" name="userChoice" placeholder="Enter choice"/>
+      <button class="otherbuttons" onclick="RPS()">Play!</button>
+      <img src="https://chubbysquirrel.neocities.org/Webp.net-gifmaker%20(7).gif" width="100px">
+      <p>Result: </p>
+      <font color="red"><p id="output"></p></font>
+      <p>Computer's Choice: </p>
+      <font color="red"><p id="compChoice" name="compchoice"></p></font>
+      <p>Score: </p>
+      <font color="red"><p id="score"></p></font>
+      <button onclick="reset()" class="otherbuttons">Reset Score</button>
+      <script>
+      var options = ["Rock", "Scissors", "Paper"];
+      var score = 0;
+      function RPS() {
+        var input = document.getElementById('userChoice').value;
+        var choice = input.toLowerCase();
+        var randomIndex = Math.floor(Math.random() * options.length);
+        var compChoice = options[randomIndex];
+        /*if(choice !=== "rock" && choice !=== "paper" && choice !==="scissors") {
+          document.getElementById('output').innerHTML = "Please enter Rock, Paper, or Scissors.";
+        }*/
+        if(choice === compChoice.toLowerCase()) {
+          document.getElementById('output').innerHTML = "Tie!";
+        } else if(choice === "scissors" && compChoice === "Paper") {
+          document.getElementById('output').innerHTML = "You win!";
+          score += 1;
+          document.getElementById('score').innerHTML = score;
+        } else if(choice === "rock" && compChoice === "Scissors") {
+          document.getElementById('output').innerHTML = "You win!";
+          score += 1;
+          document.getElementById('score').innerHTML = score;
+        } else if(choice === "paper" && compChoice === "Rock") {
+          document.getElementById('output').innerHTML = "You win!";
+          score += 1;
+          document.getElementById('score').innerHTML = score;
+        } else {
+          document.getElementById('output').innerHTML = "You lose!";
+          score -= 1;
+          document.getElementById('score').innerHTML = score;
+        }
+        document.getElementById('compChoice').innerHTML = compChoice;
+      }
+      
+      function reset() {
+        document.getElementById('score').innerHTML = 0;
+        score = 0;
+      }
+      </script>
+      </center>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+/*Style for body*/
+@import url('https://fonts.googleapis.com/css2?family=Literata&display=swap');
+* {
+  margin: 0;
+}
+body {
+  color: black;
+  font-family: 'Literata', serif;
+  background: #e4eff5;
+  margin: 0;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: #0061FF;
+}
+.none {
+  filter: none;
+}
+.filter {
+  filter: grayscale(100%);
+}
+/*Style for navbar*/
+#navbar {
+  background-color: #e8f7ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  height: 53px;
+  overflow: visible;
+  box-shadow: 0 1px 15px black;
+  transition: transform 0.2s;
+}
+        
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  color: black;
+  background-color: #daecf5;
+  transition-duration: 0.5s;
+}
+#navbar .active {
+  background-color: #daecf5;
+  color: black;
+}
+.nav2 {
+  background-color: #e8f7ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 56px;
+  overflow: visible;
+  z-index: 20;
+  box-shadow: 0 1px 15px black;
+  display: none;
+}
+.nav3 {
+  background-color: #e8f7ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin-top: 56px;
+  overflow: visible;
+  display: none;
+  z-index: 10;
+  box-shadow: 0 1px 15px black;
+}
+.logo {
+  float: right;
+  transition: transform .2s;
+}
+.logo:hover {
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+}
+.menu {
+  margin-top: 7px;
+  float: right;
+  display: none;
+}
+/*Style for text width*/
+.a {
+  width: 700px;
+}
+/*Style for buttons*/
+button {
+  border: none;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  transition: transform .2s;
+}
+button:hover {
+  transform: scale(1.1,1.1);
+  box-shadow: 0 1px 15px black;
+  border-radius: 15px;
+  color: white;
+  align-items: center;
+  border: none;
+  filter: none;
+}
+.indexbutton {
+  width: 300px;
+  height: 300px;
+  font-size: 25px;
+  font-family: 'Literata', serif;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  align-items: center;
+  border: none;
+}
+.otherbuttons {
+  width: 72px;
+  height: 31px;
+  font-size: 10px;
+  font-family: 'Literata', serif;
+  background-color: #c6edf5;
+  border-radius: 15px;
+  border: none;
+}
+.otherbuttons:hover {
+  transform: scale(1.1,1.1);
+  font-size: 18px;
+  font-family: 'Literata', serif;
+  border-radius: 15px;
+}
+.saltwaterbutton {
+  background-image: url("https://chubbysquirrel.neocities.org/Photos/saltwatertank.JPG");
+  width: 300px;
+  height: 300px;
+  font-size: 25px;
+  font-family: 'Literata', serif;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  align-items: center;
+  border: none;
+}
+.bettabutton {
+  background-image: url("https://chubbysquirrel.neocities.org/Photos/betta%20fish.JPG");
+  width: 300px;
+  height: 300px;
+  font-size: 25px;
+  font-family: 'Literata', serif;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  align-items: center;
+  border: none;
+}
+.plantbutton {
+  background-image: url("https://chubbysquirrel.neocities.org/Photos/chubbyaquarium.JPG");
+  width: 300px;
+  height: 300px;
+  font-size: 25px;
+  font-family: 'Literata', serif;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  align-items: center;
+  border: none;
+}
+.indexcontainer {
+  width: 70%; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.maincenter {
+  width: fill;
+  padding: 20px;
+  background: #f5fcfc;
+}
+.columns {
+  width: 31%;
+  background: #f5fcfc;
+  float: left;
+  padding: 10px;
+  height: auto;
+}
+/*style for footer*/
+#footer {
+  padding: 10px;
+  width: fill;
+  color: white;
+  background-color: #7fb1c9;
+  margin-top: 50px;
+}
+.left {
+  width: 21%;
+  float: left;
+  margin: 20px;
+  height: 300px;
+}
+.textshadow {
+  text-shadow: 2px 2px 4px white; 
+}
+.logobutton {
+  display: inline-block;
+}
+.logobutton:hover {
+  transform: scale(1.1,1.1);
+  cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  #navbar a {
+    display: none;
+  }
+  #navbar {
+    display: none;
+  }
+  #navbar a:hover {
+    color: black;
+    transform: scale(1.1,1.1);
+    background-color: #daecf5;
+  }
+  #navbar .active {
+    background-color: #daecf5;
+    color: black;
+    transform: scale(1.1,1.1);
+  }
+  .logo {
+    display: none;
+  }
+  .menu {
+    display: block;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  .nav2 {
+    display: block;
+  }
+  .nav3 {
+    display: none;
+  }
+  .text {
+    float: left;
+    width: 60%;
+    margin-left: 100px;
+  }
+  .navlist {
+    list-style-type: none;
+    margin: 0 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+  }
+  .mainleft {
+    width: 90%;
+    float: none;
+    text-align: center;
+  }
+  .maincenter {
+    width: 90%; 
+  }
+  .mainright {
+    float: none;
+    text-align: center;
+    width: 90%;
+    margin: 20px;
+  }
+  .a {
+    width: 90%;
+  }
+  .fishtank {
+    width: 100px;
+  }
+  .top {
+    overflow: hidden;
+  }
+}
+ul li {
+  list-style-type: none;
+}
+.navyblue {
+  width: 70%;
+  border-left: 30px solid #5c7ced;
+  height: auto;
+  padding: 0;
+}
+.navytext {
+  width: 70%;
+  background-color: #5c7ced;
+  height: auto;
+  color: white;
+  padding: 15px;
+}
+.coral {
+  width: 70%;
+  border-left: 30px solid #ffc5ab;
+  height: auto;
+  padding: 0;
+  margin-top: 40px;
+}
+.coraltext {
+  width: 70%;
+  background-color: #ffc5ab;
+  height: auto;
+  color: white;
+  padding: 15px;
+}
+button {
+  background: #5773ff;
+  font-family: 'Montserrat', sans-serif;  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  vertical-align: middle;
+}
+button:hover {
+  background-color: #0055c9;
+  transition-duration: 0.5s;
+}

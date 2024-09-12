@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The web site of chubbysquirrel</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+  </head>
+  <body>
+  <p>search bar</p>
+  <label for="input">Search</label>
+  <input list="test" id="input" class="input">
+    <datalist id="test">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+    </datalist>
+    <button id="button" onclick="process()">Submit</button>
+    
+    <script>
+      function process() {
+        var input = document.querySelector('input').value;
+        
+        if(database.input == "chicken") {
+          console.log("true");
+        }
+      }
+      
+      var database = [
+        {
+          "name": "chicken",
+          "age": "1",
+          "species": "human"
+        },
+        {
+          "name": "duckieboi",
+          "age": "69",
+          "species": "human",
+        }
+      ];
+    </script>
+  </body>
+</html>
